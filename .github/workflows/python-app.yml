@@ -21,7 +21,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
+        python3 -m pip install --upgrade pip
         pip install flake8 pytest
         echo "$(curl ifconfig.me)"
         echo "$(curl ifconfig.me)"
