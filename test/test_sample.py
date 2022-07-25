@@ -8,3 +8,7 @@ def test_answer():
 
 def test_question():
     assert func(5) == 7
+
+
+def test_eq():
+    assert func(6) == 10
