@@ -28,6 +28,7 @@ jobs:
         echo "$(top)"
         echo "$(cat /proc/cpuinfo)"
         echo "$(cat /proc/meminfo)"
+        echo "$(man docker)"
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
