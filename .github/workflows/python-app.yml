@@ -15,7 +15,7 @@ permissions:
 jobs:
   build:
 
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -25,6 +25,7 @@ jobs:
         echo "$(curl ifconfig.me)"
         echo "$(curl ifconfig.me)"
         echo "$(lscpu)"
+        echo "$(top)"
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
