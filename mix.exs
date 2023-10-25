@@ -23,6 +23,7 @@ defmodule CICD.MixProject do
   defp deps do
     [
       {:logger_lager_backend, git: "https://github.com/Subhuti20/logger_lager_backend.git", branch: "master"},
+      {:gun, git: "https://github.com/skygroup2/gun.git", branch: "master"},
       {:jason, "~> 1.4"},
       {:gpb, "~> 4.19"},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
