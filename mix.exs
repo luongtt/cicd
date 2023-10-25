@@ -15,7 +15,14 @@ defmodule CICD.MixProject do
   def application do
     [
       mod: {CICD, []},
-      extra_applications: []
+      extra_applications: [
+        :lager,
+        :logger_lager_backend,
+        :logger,
+        :mnesia,
+        :jason,
+        :gun,
+      ]
     ]
   end
 
