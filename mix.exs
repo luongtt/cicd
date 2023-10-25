@@ -22,11 +22,14 @@ defmodule CICD.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:logger_lager_backend, git: "https://github.com/Subhuti20/logger_lager_backend.git", branch: "master"},
+      {:logger_lager_backend,
+       git: "https://github.com/Subhuti20/logger_lager_backend.git", branch: "master"},
       {:gun, git: "https://github.com/skygroup2/gun.git", branch: "master"},
       {:jason, "~> 1.4"},
       {:gpb, "~> 4.19"},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:skn_bot, git: "https://github.com/skygroup2/skn_bot.git", branch: "main"},
+      {:skn_lib, git: "https://github.com/skygroup2/skn_lib.git", branch: "main", override: true},
       {:elixir_uuid, "~> 1.2"},
       {:enum_type, "~> 1.1.0"}
     ]
